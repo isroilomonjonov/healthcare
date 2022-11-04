@@ -1,0 +1,232 @@
+/*********************/
+/* FONTS
+/*********************/
+
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+/*********************/
+/* VARIABLES 
+/*********************/
+
+:root {
+  --main-color: #40a3f8;
+  --text-color-primary: #3e3e3e;
+  --text-color-base: rgba(61, 61, 63, 0.7);
+  --bg-color: rgba(177, 222, 255, 0.3);
+}
+
+/*********************/
+/* GENERAL STYLES 
+/*********************/
+
+html {
+  /* (10/16)*100 */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+/*********************/
+/* REUSABLE STYLES
+/*********************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 1.2rem 2rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*********************/
+/* VARIABLES 
+/*********************/
+
+:root {
+  --main-color: #40a3f8;
+  --text-color-primary: #3e3e3e;
+  --text-color-base: rgba(61, 61, 63, 0.7);
+  --bg-color: rgba(177, 222, 255, 0.3);
+}
+
+/*********************/
+/* GENERAL STYLES 
+/*********************/
+
+html {
+  /* (10/16)*100 */
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(64, 162, 248, 0.644);
+}
+
+body {
+  color: #555;
+}
+
+/*********************/
+/* REUSABLE STYLES
+/*********************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.heading-primary {
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 7rem;
+  color: var(--text-color-primary);
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  color: var(--text-color-primary);
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-size: 4.2rem;
+  line-height: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading-primary span {
+  color: var(--main-color);
+}
+
+.section-desc {
+  font-family: "Roboto-Medium";
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+}
+
+.grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  padding: 1.2rem 2rem;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn-primary:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*********************/
+/* ADDITIONAL STYLES
+/*********************/
+
+.w-25 {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.mr-10 {
+  margin-right: 1rem;
+}
+.mb-75 {
+  margin-bottom: 7.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Mobile menu */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  display: none;
+}
+
+.mobile-menu-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  stroke: #555;
+}
+
+.mobile-menu-icon[name="x-icon"] {
+  display: none;
+}

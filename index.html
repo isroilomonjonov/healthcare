@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Healthcare clinic cares about your health. With high qualified professional doctors"
+    />
+
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="apple-touch-icon"
+      href="img/apple-touch-icon.png"
+      type="image/png"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Healthcare</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container main-header-content">
+        <p class="logo">HEALTHCARE</p>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a class="main-nav-link" href="/">Home</a></li>
+            <li>
+              <a class="main-nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="main-nav-link" href="#doctors">Doctors</a></li>
+            <li>
+              <a class="main-nav-link" href="#services">Services</a>
+            </li>
+            <li>
+              <a class="main-nav-link btn btn-primary" href="#booking"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="mobile-menu-icon"
+            name="menu-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="mobile-menu-icon"
+            name="x-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero-grid">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Find And Search Your <span>Suitable Doctor’s</span>
+            </h1>
+            <p class="hero-text">
+              Join us and take care of yourself and your family with health
+              services that will make you feel confident and safe in your daily
+              life.
+            </p>
+            <form action="#" class="hero-form">
+              <input type="text" placeholder="Find your doctor" />
+
+              <div class="select-box">
+                <select name="location" id="">
+                  <option value="1">New York, USA</option>
+                  <option value="2">California, USA</option>
+                  <option value="3">London, UK</option>
+                  <option value="4">Tashkent, Uzbekistan</option>
+                </select>
+              </div>
+
+              <!-- <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="location-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg> -->
+
+              <!-- <select name="location" id="">
+                <option value="">Select location</option>
+                <option value="1">New York, USA</option>
+                <option value="2">California, USA</option>
+                <option value="3">London, UK</option>
+                <option value="4">Tashkent, Uzbekistan</option>
+              </select> -->
+
+              <button class="btn-search">
+                <img src="img/icon/search_icon.png" alt="" />
+              </button>
+            </form>
+          </div>
+          <div class="hero-img-box">
+            <div class="hero-circle-icons">
+              <img class="hero-circle" src="img/hero-circle.png" alt="" />
+
+              <div class="hero-icon icon-phone">
+                <img src="img/icon/phone-icon.png" alt="" />
+              </div>
+
+              <div class="hero-icon icon-message">
+                <img src="img/icon/message-icon.png" alt="" />
+              </div>
+
+              <div class="hero-icon icon-camera">
+                <img src="img/icon/camera-icon.png" alt="" />
+              </div>
+
+              <div class="hero-likes">
+                <img src="img/icon/heart-icon.png" alt="" />
+                <p>2500+</p>
+                <span>Happy Patients</span>
+              </div>
+
+              <div class="hero-rate">
+                <div class="hero-rate-avatar">
+                  <img src="img/avatar.jpg" alt="" />
+                </div>
+
+                <div class="hero-rate-text">
+                  <div class="hero-stars">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <picture>
+              <source srcset="img/hero-dr.webp" type="image/webp" />
+              <source srcset="img/hero-dr.png" type="image/png" />
+              <img class="hero-img" src="img/hero-dr.png" alt="Doctor woman" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION FEATURES -->
+
+      <section class="section-features">
+        <div class="container">
+          <h2 class="heading-secondary">3 Easy Steps and Get Your Solution</h2>
+
+          <div class="grid grid-3-cols">
+            <div class="feature">
+              <div class="feature-img feature-img-1">
+                <img src="img/icon/search-icon.png" alt="" />
+              </div>
+
+              <p class="feature-title">Find best doctor’s</p>
+              <p class="feature-desc">
+                Find your doctor easily with a minimum of effort. We've kept
+                everything organised for you.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-img feature-img-2">
+                <img src="img/icon/calendar.png" alt="" />
+              </div>
+
+              <p class="feature-title">Get Appointment</p>
+              <p class="feature-desc">
+                Ask for an appointment of the doctor quickly with almost a
+                single click. We take care of the rest.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-img feature-img-3">
+                <img src="img/icon/online-healthcare.png" alt="" />
+              </div>
+
+              <p class="feature-title">Happy Consultations</p>
+              <p class="feature-desc">
+                Do consultations and take the service based on your appointment.
+                Get back to good health
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION QUALITY -->
+      <section class="section-quality">
+        <div class="container grid grid-2-cols">
+          <div class="quality-img-box">
+            <img class="quality-dots" src="img/dot-grid.png" alt="" />
+
+            <picture>
+              <source srcset="img/quality-doctor.webp" type="image/webp" />
+              <source srcset="img/quality-doctor.png" type="image/png" />
+              <img
+                class="quality-dr"
+                src="img/quality-doctor.png"
+                alt="Doctor Xolidjon"
+              />
+            </picture>
+
+            <div class="quality-rate">
+              <div class="quality-rate-img">
+                <img src="img/client/client1.png" alt="" />
+              </div>
+              <p class="quality-rate-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatibus, neque?
+              </p>
+            </div>
+
+            <div class="quality-profile">
+              <div class="profile-heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="heart-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <div class="profile-info">
+                <div class="profile-img">
+                  <img src="img/profile-img.png" alt="" />
+                </div>
+                <div>
+                  <p class="profile-name">Dr. Khalid Abbed</p>
+                  <span>Carddiologist (MBBS)</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span> 5.0 </span>
+                </div>
+              </div>
+
+              <div class="profile-achievements">
+                <div>
+                  <p class="achiv-name">Experience</p>
+                  <p class="achiv-amount">5 Years</p>
+                </div>
+
+                <div>
+                  <p class="achiv-name">Patients</p>
+                  <p class="achiv-amount">3.5K</p>
+                </div>
+
+                <div>
+                  <p class="achiv-name">Reviews</p>
+                  <p class="achiv-amount">2.5K</p>
+                </div>
+              </div>
+
+              <div class="profile-location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="location-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <p>Mayo Clinic Hospital</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quality-text-box">
+            <h2 class="heading-secondary">
+              Best quality service with our experience doctors
+            </h2>
+            <p class="section-desc">
+              With our top doctors, we are able to provide best medical services
+              above average We have highly experienced doctors, so don't worry
+              They are also very talented in their fields
+            </p>
+            <ul>
+              <li>Search your specialist & Online consultations anywhere</li>
+              <li>Consultation our top specialists</li>
+              <li>Doctors are available 24/7</li>
+            </ul>
+
+            <a href="#" class="btn btn-primary btn-explore">
+              <span class="mr-10">Explore specialists</span>
+              <span>&rightarrow;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section-service" id="services">
+        <h2 class="heading-secondary">Our Service</h2>
+        <p class="section-desc text-center w-25 mb-75">
+          Our doctors have high qualified skills and are guaranteed to help you
+          recover from your disease.
+        </p>
+
+        <div class="container grid grid-3-cols mb-75">
+          <div class="service">
+            <img src="img/icon/heart.png" alt="" />
+            <p class="service-name">Cardiology</p>
+            <p class="service-desc">
+              Our cardiologists are skilled at the diagnosing and treating
+              diseases of the cardiovascular system.
+            </p>
+          </div>
+
+          <div class="service service-active">
+            <img src="img/icon/pulmanolog.png" alt="" />
+            <p class="service-name">Pulmonology</p>
+            <p class="service-desc">
+              Our Pulmonologist are skilled at diagnosing treating diseases of
+              the Pulmonology system.
+            </p>
+          </div>
+
+          <div class="service">
+            <img src="img/icon/medicine.png" alt="" />
+            <p class="service-name">Medicine</p>
+            <p class="service-desc">
+              Our medcine doctor are skilled at diagnosing treating diseases of
+              the latest medicne system.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="service-dots">
+            <li>
+              <button class="service-dot service-dot-active">&nbsp;</button>
+            </li>
+            <li>
+              <button class="service-dot">&nbsp;</button>
+            </li>
+            <li>
+              <button class="service-dot">&nbsp;</button>
+            </li>
+            <li>
+              <button class="service-dot">&nbsp;</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- DOCTORS -->
+
+      <section class="section-doctors" id="doctors">
+        <h2 class="heading-secondary">Meet Our Certified Online Doctors</h2>
+        <p class="section-desc text-center w-25 mb-75">
+          Our online doctors have an average of 15 years experience and a 98%
+          satisfaction rating, they really set us apart!
+        </p>
+
+        <div class="container grid grid-4-cols mb-75">
+          <div class="doctor">
+            <div class="doctor-img">
+              <img src="img/dr/dr-amanda.png" alt="" />
+            </div>
+            <p class="doctor-name">Dr Amanda Linda</p>
+            <p class="doctor-position">Dentist Specilist</p>
+            <div class="doctor-socials">
+              <a href="#">
+                <img src="img/icon/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/icon/twitter.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="img/icon/linkedin.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="doctor">
+            <div class="doctor-img">
+              <img src="img/dr/dr-alisa.png" alt="" />
+            </div>
+            <p class="doctor-name">Dr. Alisa Rahman</p>
+            <p class="doctor-position">Carddiologist Specilist</p>
+            <div class="doctor-socials">
+              <a href="#">
+                <img src="img/icon/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/icon/twitter.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="img/icon/linkedin.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="doctor">
+            <div class="doctor-img">
+              <img src="img/dr/dr-antony.png" alt="" />
+            </div>
+            <p class="doctor-name">Dr. Anthony Fauci</p>
+            <p class="doctor-position">Neurology Specilist</p>
+            <div class="doctor-socials">
+              <a href="#">
+                <img src="img/icon/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/icon/twitter.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="img/icon/linkedin.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="doctor">
+            <div class="doctor-img">
+              <img src="img/dr/dr-holid.png" alt="" />
+            </div>
+            <p class="doctor-name">Dr. Khalid Abbed</p>
+            <p class="doctor-position">Cancer Specilist</p>
+            <div class="doctor-socials">
+              <a href="#">
+                <img src="img/icon/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/icon/twitter.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="img/icon/linkedin.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <a href="#" class="btn btn-primary btn-explore"
+            >Explore All Doctors
+          </a>
+        </div>
+      </section>
+      <!-- Mobile APPS -->
+
+      <section class="section-mobile-apps">
+        <div class="container grid grid-2-cols">
+          <div class="mobile-img-box">
+            <img src="img/phone.png" alt="" />
+          </div>
+          <div class="mobile-text-box">
+            <h2 class="heading-secondary">
+              Mobile apps are available Get HealthCare for free!
+            </h2>
+            <p class="section-desc">
+              Get on-demand access to a doctor on your phone with the free
+              HealthCare mobile app. Download and register on our app for free
+              and feel safe for all your family
+            </p>
+
+            <a href="#" class="app-link mr-10">
+              <img src="img/icon/google-play.svg" alt="" />
+            </a>
+
+            <a href="#" class="app-link">
+              <img src="img/icon/app-store.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section class="section-testimonials" id="testimonials">
+        <h2 class="heading-secondary mb-75">
+          Look our Clients have to say about us
+        </h2>
+
+        <div class="container grid grid-3-cols">
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="img/client/client1.png" alt="" />
+            </div>
+
+            <div class="testimonial-info">
+              <div>
+                <p class="testimonial-name">Alan Zara dilan</p>
+                <p class="testimonial-loc">New York, America, USA</p>
+              </div>
+
+              <div class="testimonial-stars">
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              Telehealth is fueled by digital technologies and DocTime
+              telemedicine app has brought a great revolution in medical
+              services specially an overpopulated country where virtual chamber
+              can create at anywhere thoughout country
+            </p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="img/client/client2.png" alt="" />
+            </div>
+
+            <div class="testimonial-info">
+              <div>
+                <p class="testimonial-name">Alex Maxwell</p>
+                <p class="testimonial-loc">San Francisco, USA</p>
+              </div>
+
+              <div class="testimonial-stars">
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              I visited my PCP for abdominal pain. My doctor told me that I need
+              to see Gastroenterologist. Earlier I used to call multiple offices
+              to schedule an appointment that suites my time.
+            </p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="img/client/client3.png" alt="" />
+            </div>
+
+            <div class="testimonial-info">
+              <div>
+                <p class="testimonial-name">Dr. Tasnim zara</p>
+                <p class="testimonial-loc">Los Angeles, USA</p>
+              </div>
+
+              <div class="testimonial-stars">
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+                <span>&starf;</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              HealthCare is enlightens my superpower each and every time...! I
+              find DocTime a brand-able telemedicine platform with virtual
+              waiting room, video consultation, e-prescription, beautifully
+              planned user interface. Thank you :)
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Booking -->
+      <section class="section-booking" id="booking">
+        <div class="container booking grid grid-2-cols">
+          <div class="booking-text-box">
+            <p class="booking-text">It’s time change your life today</p>
+            <a href="#" class="btn btn-booking">Book an Appoinment </a>
+          </div>
+
+          <div class="booking-img-box">
+            <img class="booking-img" src="img/young-female-doctor.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container footer-grid">
+        <div class="contact-col">
+          <a class="logo" href="/"> HEALTHCARE</a>
+          <p class="address">Metairie, 3689 Bassel Street, LA, Louisiana</p>
+          <p class="phone">
+            Contact us: <a href="tel:+998974848868">225-788-5489</a>
+          </p>
+          <ul class="footer-socials">
+            <li>
+              <a class="footer-social-link" href="#"
+                ><img src="img/icon/facebook.png" alt=""
+              /></a>
+            </li>
+
+            <li>
+              <a class="footer-social-link" href="#"
+                ><img src="img/icon/instagram.png" alt=""
+              /></a>
+            </li>
+
+            <li>
+              <a class="footer-social-link" href="#"
+                ><img src="img/icon/twitter.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer-social-link" href="#">
+                <img src="img/icon/youtube.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-nav-title">Category</p>
+          <ul class="footer-nav-menu">
+            <li><a class="footer-nav-link" href="#">Home</a></li>
+            <li><a class="footer-nav-link" href="#">About </a></li>
+            <li><a class="footer-nav-link" href="#">Services </a></li>
+            <li><a class="footer-nav-link" href="#">Reviews</a></li>
+            <li><a class="footer-nav-link" href="#">Article</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-nav-title">About</p>
+          <ul class="footer-nav-menu">
+            <li><a class="footer-nav-link" href="#">Partners</a></li>
+            <li><a class="footer-nav-link" href="#">Careers </a></li>
+            <li><a class="footer-nav-link" href="#"> Press</a></li>
+            <li><a class="footer-nav-link" href="#">Community</a></li>
+          </ul>
+        </nav>
+        <div class="subscribe-col">
+          <p class="footer-nav-title">Subscribe</p>
+          <p class="subscribe-text">
+            Sign up for tips, new destinations, and exclusive promos.
+          </p>
+          <form class="subscribe-form">
+            <input placeholder="Enter your email" type="text" />
+            <input type="submit" value="Subcribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
